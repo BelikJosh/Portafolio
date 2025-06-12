@@ -20,6 +20,7 @@
                     <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#education">Educación</a></li>
                     <li><a href="#abilities">Competencias</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
                 </ul>
             </nav>
         </div>
@@ -96,7 +97,6 @@
                 </div>
             </div>
 
-            <!-- Sección Backend -->
             <div class="skill-card">
                 <h3>Backend</h3>
                 <p>Tecnologías para el desarrollo del lado del servidor:</p>
@@ -118,6 +118,11 @@
                             alt="PostgreSQL" class="tech-logo">
                     </div>
                     <div class="tech-item">
+                        <span>SQL Server</span>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+                            alt="SQL Server" class="tech-logo">
+                    </div>
+                    <div class="tech-item">
                         <span>PostgreSQL</span>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/640px-Postgresql_elephant.svg.png"
                             alt="MongoDB" class="tech-logo">
@@ -132,6 +137,18 @@
                         <span>C#</span>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png"
                             alt="ElasticSearch" class="tech-logo">
+                    </div>
+
+                    <div class="tech-item">
+                        <span>Java</span>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"
+                            class="tech-logo">
+                    </div>
+
+                    <div class="tech-item">
+                        <span>NetBeans</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Apache_NetBeans_Logo.svg"
+                            alt="NetBeans" class="tech-logo">
                     </div>
                 </div>
             </div>
@@ -166,11 +183,164 @@
                             alt="ElasticSearch" class="tech-logo">
                     </div>
 
+                    <div class="tech-item">
+                        <span>VS Code</span>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                            alt="VS Code" class="tech-logo">
+                    </div>
+                    <div class="tech-item">
+                        <span>Visual Studio</span>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+                            alt="Visual Studio" class="tech-logo">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="projects-container">
+                <!-- Proyecto 1 - E-commerce -->
+                <div class="project-card">
+                    <div class="project-carousel">
+                        <button class="carousel-arrow prev" onclick="moveProjectCarousel(this, -1)">&#10094;</button>
+
+                        <div class="carousel-images">
+                            <img src="/src/img/ojecommerce.jpg" alt="E-commerce vista 1" class="active"
+                                onclick="openLightbox('/src/img/ojecommerce.jpg')">
+                            <img src="/src/img/ojecommerce.2jpg.jpg" alt="E-commerce vista 2"
+                                onclick="openLightbox('/src/img/ojecommerce.2jpg.jpg')">
+                            <img src="/src/img/Productos.jpg" alt="E-commerce vista 3"
+                                onclick="openLightbox('/src/img/Productos.jpg')">
+                        </div>
+
+                        <button class="carousel-arrow next" onclick="moveProjectCarousel(this, 1)">&#10095;</button>
+
+                        <div class="carousel-indicators"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3>App de e-commerce tienda gamer</h3>
+                        <p>Aplicación móvil que ofrece diversos componentes para poder armar tu computadora gamer con modo oscuro.</p>
+                        <div class="project-tech">
+                            <span>React native</span>
+                            <span>Typescript</span>
+                            <span>SQLite</span>
+                            <span>Gluestack</span>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-carousel">
+                        <button class="carousel-arrow prev" onclick="moveProjectCarousel(this, -1)">&#10094;</button>
+
+                        <div class="carousel-images">
+                            <img src="/src/img/Hoja_de_vida.jpg" alt="App clima vista 1" class="active"
+                                onclick="openLightbox('/src/img/Hoja_de_vida.jpg')">
+                            <img src="/src/img/Hoja_de_vida3.jpg" alt="App clima vista 2"
+                                onclick="openLightbox('/src/img/Hoja_de_vida3.jpg')">
+                            <img src="/src/img/Hoja_de_vida3jpg.jpg" alt="App clima vista 2"
+                                onclick="openLightbox('/src/img/Hoja_de_vida3jpg.jpg')">
+                        </div>
+
+                        <button class="carousel-arrow next" onclick="moveProjectCarousel(this, 1)">&#10095;</button>
+
+                        <div class="carousel-indicators"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Hoja de enfermería Digital con sensores Biomedicos y dictado por voz</h3>
+                        <p>Aplicación web donde puedes dar de alta pacientes ya sea por dictado por voz o por texto, ademas de contar con llenado automatico de signos vitales como temperatura corporal y presion arterial.</p>
+                        <div class="project-tech">
+                            <span>React native</span>
+                            <span>Typescript</span>
+                            <span>Expo</span>
+                            <span>Arduino</span>
+                            <span>Python</span>
+                            <span>ElasticSearch</span>
+                        </div>
+                      
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-carousel">
+                        <button class="carousel-arrow prev" onclick="moveProjectCarousel(this, -1)">&#10094;</button>
+
+                        <div class="carousel-images">
+                            <img src="/src/img/angular1.jpg" alt="App clima vista 1" class="active"
+                                onclick="openLightbox('/src/img/angular1.jpg')">
+                            <img src="/src/img/angular2.jpg" alt="App clima vista 2"
+                                onclick="openLightbox('/src/img/angular2.jpg')">
+                            <img src="/src/img/angular3.jpg" alt="App clima vista 2"
+                                onclick="openLightbox('/src/img/angular3.jpg')">
+                            <img src="/src/img/angular4.jpg" alt="App clima vista 2"
+                                onclick="openLightbox('/src/img/angular4.jpg')">
+                        </div>
+
+                        <button class="carousel-arrow next" onclick="moveProjectCarousel(this, 1)">&#10095;</button>
+
+                        <div class="carousel-indicators"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Gestión de citas médicas</h3>
+                        <p>Aplicación web que muestra las citas disponibles, además de tener el control de reagendarlas y editarlas.</p>
+                        <div class="project-tech">
+                            <span>Angular</span>
+                            <span>Typescript</span>
+                            <span>Javascript</span>
+                            <span>MySQL Workbench</span>
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-carousel">
+                        <button class="carousel-arrow prev" onclick="moveProjectCarousel(this, -1)">&#10094;</button>
+
+                        <div class="carousel-images">
+                            <img src="/src/img/QRHeal.jpg" alt="App clima vista 1" class="active"
+                                onclick="openLightbox('/src/img/QRHeal.jpg')">
+                            <img src="/src/img/QR.jpg" alt="App clima vista 2"
+                                onclick="openLightbox('/src/img/QR.jpg')">
+                            <img src="/src/img/QR2.jpg" alt="App clima vista 2"
+                                onclick="openLightbox('/src/img/QR2.jpg')">
+                        </div>
+
+                        <button class="carousel-arrow next" onclick="moveProjectCarousel(this, 1)">&#10095;</button>
+
+                        <div class="carousel-indicators"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3>App de Hoja de enfermería Digital</h3>
+                        <p>Aplicación móvil donde se puede dar de alta a pacientes con un codigo QR unico para poder buscarlo de manera mas rapida y eficaz escaneandolo en la misma app.</p>
+                        <div class="project-tech">
+                            <span>React native</span>
+                            <span>Typescript</span>
+                            <span>SQLite</span>
+                            <span>Gluestack</span>
+                        </div>
+                      
+                    </div>
+                </div>
+
+              
+            </div>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn" onclick="closeLightbox(event)">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption" id="caption"></div>
+    </div>
     <section id="education">
         <div class="container">
             <h2 class="section-title">Educación</h2>
@@ -213,9 +383,7 @@
                     <p class="date">2024</p>
                     <p>Tercer y último módulo de la certificación CCNA, centrado en arquitecturas de red empresarial,
                         seguridad de red, automatización y virtualización de redes.</p>
-                    <button
-                        onclick="window.open('./src/Documents/Ensa.pdf', '_blank')"
-                        class="diploma-button">
+                    <button onclick="window.open('./src/Documents/Ensa.pdf', '_blank')" class="diploma-button">
                         <i class="fas fa-certificate"></i> Ver diploma
                     </button>
                 </div>
@@ -225,7 +393,7 @@
                     <p class="date">2024</p>
                     <p>Curso introductorio a los fundamentos del sistema operativo Linux, incluyendo navegación por la
                         línea de comandos, gestión de archivos y procesos.</p>
-                     <button
+                    <button
                         onclick="window.open('./src/Documents/Linux_Unhatched_certificate_21151039-aguascalientes-tecnm-mx_f54f3f8c-0e97-4848-95a1-44ee2c556a1b.pdf', '_blank')"
                         class="diploma-button">
                         <i class="fas fa-certificate"></i> Ver diploma
@@ -252,6 +420,7 @@
             </div>
         </div>
     </section>
+
 
     <section id="abilities">
         <div class="container">
@@ -289,6 +458,7 @@
             </div>
         </div>
     </section>
+
 
     <footer id="contact">
         <div class="container">

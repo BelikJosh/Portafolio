@@ -295,3 +295,302 @@ footer p {
 .diploma-button:hover {
     background-color: #0056b3;
 }
+/* Estilos para la sección de proyectos */
+#projects {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.12), 
+                0 4px 8px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15), 
+                0 6px 12px rgba(0,0,0,0.1);
+}
+
+
+.project-content {
+    padding: 20px;
+}
+
+.project-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.project-content p {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.project-tech span {
+    background: #e0e0e0;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.project-link {
+    display: inline-block;
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.project-link:hover {
+    color: #3498db;
+}
+/* Contenedor principal */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 15px;
+}
+
+/* Tarjeta de proyecto */
+.project-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+/* Imagen responsive */
+.project-image {
+    width: 100%;
+    aspect-ratio: 19/15; /* Proporción recomendada (ajústala) */
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Evita deformaciones */
+    transition: transform 0.5s;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+/* Contenido adaptable */
+.project-content {
+    padding: 15px;
+}
+
+.project-tech span {
+    display: inline-block;
+    background: #f0f0f0;
+    padding: 4px 12px;
+    margin: 5px 5px 0 0;
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 5px 15px;
+    background: #2c3e50;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.project-link:hover {
+    background: #3498db;
+}
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+    text-align: center;
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%; /* Máximo 90% del ancho de la pantalla */
+    max-height: 90vh; /* Máximo 90% del alto de la pantalla */
+    width: auto; /* Ajuste automático según proporción */
+    height: auto;
+    margin-top: 5vh;
+    animation: zoom 0.3s;
+}
+
+/* Ajustes para desktop (pantallas grandes) */
+@media (min-width: 768px) {
+    .lightbox-content {
+        max-width: 80%; /* En desktop ocupa hasta 80% del ancho */
+        max-height: 80vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .lightbox-content {
+        max-width: 1200px; /* Límite máximo de 1200px (opcional) */
+    }
+}
+
+/* El resto del CSS se mantiene igual */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #bbb;
+}
+
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+/* Estilos del carrusel por proyecto */
+.project-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    height: 300px; /* Altura fija para todas las imágenes */
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+    display: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.carousel-images img.active {
+    display: block;
+}
+
+.project-carousel .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.project-carousel .carousel-arrow:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+.project-carousel .prev {
+    left: 15px;
+}
+
+.project-carousel .next {
+    right: 15px;
+}
+
+.project-carousel .carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.project-carousel .carousel-indicators span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.project-carousel .carousel-indicators span.active {
+    background: white;
+    transform: scale(1.2);
+}
+
+/* Ajustes para móvil */
+@media (max-width: 768px) {
+    .carousel-images {
+        height: 250px;
+    }
+    
+    .project-carousel .carousel-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+}
