@@ -331,6 +331,41 @@
                     </div>
                 </div>
 
+                <div class="project-card">
+                    <div class="project-carousel">
+                        <button class="carousel-arrow prev" onclick="moveProjectCarousel(this, -1)">&#10094;</button>
+
+                        <div class="carousel-images">
+                            <img src="./src/img/login_ticket.jpg" alt="App clima vista 1" class="active"
+                                onclick="openLightbox('./src/img/login_ticket.jpg')">
+                            <img src="./src/img/vista_empleado.jpg" alt="App clima vista 1" class="active"
+                                onclick="openLightbox('./src/img/vista_empleado.jpg.jpg')">
+                            <img src="./src/img/vista_empleado_2.jpg" alt="App clima vista 2"
+                                onclick="openLightbox('./src/img/vista_empleado_2.jpg')">
+                            <img src="./src/img/vista_ti.jpg" alt="App clima vista 2"
+                                onclick="openLightbox('./src/img/vista_ti.jpg')">
+                            <img src="./src/img/admin.jpg" alt="App clima vista 2"
+                                onclick="openLightbox('./src/img/admin.jpg')">
+                        </div>
+
+                        <button class="carousel-arrow next" onclick="moveProjectCarousel(this, 1)">&#10095;</button>
+
+                        <div class="carousel-indicators"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Sistema de Generación de tickets</h3>
+                        <p>Aplicacion web que permite realizar tickets o reportes al departamento de sistemas para solicitar algún equipo o alguna dificultad que tengan con su equipo, ademas almacena, gestiona y administra todos los empleados para poder resolver los ticket de manera mas optima.</p>
+                        <div class="project-tech">
+                            <span>Angular 20</span>
+                            <span>Typescript</span>
+                            <span>MysQL</span>
+                            <span>Xammp</span>
+                        </div>
+                      
+                    </div>
+                </div>
+
               
             </div>
         </div>
@@ -349,7 +384,7 @@
                     <h3>Tecnologías de la Información y Comunicaciones</h3>
                     <p class="institution">Instituto Tecnológico de Aguascalientes</p>
                     <p class="date">2021 - presente</p>
-                    <p>Desarrollo de aplicaciones moviles multiplataforma y web.</p>
+                    <p>Desarrollo de aplicaciones móviles multiplataforma y web, ademas de Tecnologías Digitales Emergentes.</p>
                 </div>
 
                 <div class="education-card">
@@ -412,6 +447,34 @@
 
                     <button
                         onclick="window.open('./src/Documents/Josue David_Hernandez Duron_21151039@aguascalientes.tecnm.mx.pdf', '_blank')"
+                        class="diploma-button">
+                        <i class="fas fa-certificate"></i> Ver diploma
+                    </button>
+                </div>
+                <div class="education-card">
+                    <h3>Normativa ISO 27001</h3>
+                    <p class="institution">espera</p>
+                    <p class="date">2025</p>
+                    <p>
+                        Este curso aborda sobre la aplicación a nivel empresarial de la normativa ISO 27001 ademas de los distintas herramientas y métodos para cumplirla.
+                    </p>
+
+                    <button
+                        onclick="window.open('./src/Documents/Participacion_en_curso_Normativa_ISO_27001.pdf', '_blank')"
+                        class="diploma-button">
+                        <i class="fas fa-certificate"></i> Ver diploma
+                    </button>
+                </div>
+                <div class="education-card">
+                    <h3>Taller de ciberseguridad</h3>
+                    <p class="institution">espera</p>
+                    <p class="date">2025</p>
+                    <p>
+                        Este curso aborda sobre una platica intensiva mostrando ejemplos de prácticas eticas de ciberseguridad para prevenir ataques, abordando asi los diferentes tipos de ransomware, malware y como prevenirnos de estos tipos de ataques.
+                    </p>
+
+                    <button
+                        onclick="window.open('./src/Documents/Participacion_en_curso_taller_de_ciberseguridad.pdf', '_blank')"
                         class="diploma-button">
                         <i class="fas fa-certificate"></i> Ver diploma
                     </button>
